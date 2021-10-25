@@ -133,18 +133,20 @@ current.auth = auth
 
 if settings.enable_captchas:
     ## Enable captcha's :-(
-    from gluon.tools import Recaptcha
+    from gluon.tools import Recaptcha2
 
-    auth.settings.captcha = Recaptcha(
+    auth.settings.captcha = Recaptcha2(
         request,
-        "6Lfb_t4SAAAAAB9pG_o1CwrMB40YPsdBsD8GsvlD",
-        "6Lfb_t4SAAAAAGvAHwmkahQ6s44478AL5Cf-fI-x",
+        "6Lfb_t4SAAAAAB9pG_o1CwrMB40YPsdBsD8GsvlD", # original
+        #'6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI' # google test key
+        "6Lfb_t4SAAAAAGvAHwmkahQ6s44478AL5Cf-fI-x", # original
+        #'6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe' # google test key
         options="theme:'blackglass'",
     )
 
-auth.settings.login_captcha = False
-auth.settings.retrieve_password_captcha = False
-auth.settings.retrieve_username_captcha = False
+auth.settings.login_captcha = True
+auth.settings.retrieve_password_captcha = True
+auth.settings.retrieve_username_captcha = True
 
 # Set up for `two-factor authentication <http://web2py.com/books/default/chapter/29/09/access-control#Two-step-verification>`_.
 # auth.settings.auth_two_factor_enabled = True
