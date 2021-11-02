@@ -137,11 +137,11 @@ if settings.enable_captchas:
 
     auth.settings.captcha = Recaptcha2(
         request,
-        "6Lfb_t4SAAAAAB9pG_o1CwrMB40YPsdBsD8GsvlD", # original
-        #'6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI' # google test key
-        "6Lfb_t4SAAAAAGvAHwmkahQ6s44478AL5Cf-fI-x", # original
-        #'6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe' # google test key
-        options="theme:'blackglass'",
+        #"6Lfb_t4SAAAAAB9pG_o1CwrMB40YPsdBsD8GsvlD", # original
+        '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI', # google test key
+        #"6Lfb_t4SAAAAAGvAHwmkahQ6s44478AL5Cf-fI-x", # original
+        '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe', # google test key
+        #options="theme:'blackglass'",
     )
 
 auth.settings.login_captcha = True
