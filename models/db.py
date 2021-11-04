@@ -130,8 +130,10 @@ if settings.enable_captchas:
     auth.settings.captcha = Recaptcha(
         request,
         "6Lfb_t4SAAAAAB9pG_o1CwrMB40YPsdBsD8GsvlD",
+        # "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI", google developer key
         "6Lfb_t4SAAAAAGvAHwmkahQ6s44478AL5Cf-fI-x",
-        options="theme:'blackglass'",
+        # "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe", google developer key
+        # options="theme:'blackglass'", think that this is outdated. 
     )
 
 auth.settings.login_captcha = False
